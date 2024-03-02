@@ -1,0 +1,15 @@
+
+
+package pages
+
+import (
+	"github.com/conneroisu/go-htmx-templ-tailwind-template/internal/components"
+)
+
+templ About(name []string) {
+	@components.Page("Home") {
+		for _, n := range name {
+			<h1>Hello, { n }!</h1>
+		}
+	}
+}

@@ -1,0 +1,9 @@
+app = "go-htmx-templ-tailwind-template"
+
+[[services]]
+  internal_port = 8080
+  protocol = "TCP"
+  [services.port.80]
+    handlers = ["HTTP"]
+  [services.port.443]
+    handlers = ["TLS", "HTTP"]
